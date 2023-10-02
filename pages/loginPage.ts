@@ -1,7 +1,9 @@
 import { Page, Locator} from "@playwright/test";
 
-const user_email = "binay@getnada.com";
-const user_password = "Binay@keela321" ;
+// Import the dotenv module and load the .env variables
+//creditional here ...!
+const user_email = " ";
+const user_password = " " ;
 
 export default class loginPage{
     constructor (public page: Page){
