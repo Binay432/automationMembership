@@ -4,6 +4,19 @@ export default class MembershipPage{
     constructor (public page: Page){
         this.page = page
     }
+    async addMembership(membershipName:string, description:string, duration:string, amount:string, isMembershipRenew:boolean){
+        await this.page.getByRole('link', { name: ' Memberships' }).click();
+        await this.page.getByRole('button', { name: 'New Membership Plan' }).click();
+        await this.page.getByTestId('input-name').fill(membershipName);
+        await this.page.getByTestId('input-description').fill(description);
+        await this.page.getByRole('button', { name: duration }).click();
+        await this.page.getByTestId('input-amount').fill(amount);
+        if(isMembershipRenew){
+            await this.page.getByText('Enable option to renew').click();
+        }
+        await this.page.getByTestId('modal-save').click();
+
+    }
     async gotoMembershipSection(){
         await this.page.getByRole('link', { name: ' Memberships' }).click();
     }
