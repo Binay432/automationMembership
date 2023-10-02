@@ -3,6 +3,7 @@ PLAYWRIGHT TEST FOR MEMBERSHIP
 Pre-requisite:
 
 1. Receipt must be setup before adding subscripion 
+2. Add your creditional on loginPage.ts
 
 Test includes:
 1. Verify if user can add Monthly/Quaterly/Annually/Onetime/Membership
