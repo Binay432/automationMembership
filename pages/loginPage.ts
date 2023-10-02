@@ -1,6 +1,6 @@
 import { Page, Locator} from "@playwright/test";
 
-const user_email = "binay.sah@keela.com";
+const user_email = "binay@getnada.com";
 const user_password = "Binay@keela321" ;
 
 export default class loginPage{
